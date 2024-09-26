@@ -8,26 +8,26 @@ class HabitTrackerApp extends StatelessWidget {
     return MaterialApp(
       title: 'Controle de Hábitos',
       theme: ThemeData(
-        primaryColor: const Color(0xFF001f36), // color2
-        scaffoldBackgroundColor: const Color(0xFFfbffcd), // color4
+        primaryColor: const Color(0xFF001f36),
+        scaffoldBackgroundColor: const Color(0xFFfbffcd),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF1C5560), // color3
+          backgroundColor: Color(0xFF1C5560),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFF000000), // color1
+          backgroundColor: Color(0xFF000000),
         ),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(
-              color: Color(0xFF000000)), // Substitui bodyText1 por bodyLarge
+              color: Color(0xFF000000)),
           bodyMedium: TextStyle(
-              color: Color(0xFF000000)), // Substitui bodyText2 por bodyMedium
+              color: Color(0xFF000000)),
         ),
-        cardColor: const Color(0xFF79ae92), // color4
+        cardColor: const Color(0xFF79ae92),
         checkboxTheme: CheckboxThemeData(
           checkColor:
-              MaterialStateProperty.all(const Color(0xFFfbffcd)), // color5
+              MaterialStateProperty.all(const Color(0xFFfbffcd)),
           fillColor:
-              MaterialStateProperty.all(const Color(0xFF1c5560)), // color3
+              MaterialStateProperty.all(const Color(0xFF1c5560)),
         ),
       ),
       home: const HabitListScreen(),
@@ -83,26 +83,26 @@ class _HabitListScreenState extends State<HabitListScreen> {
           decoration: const InputDecoration(hintText: 'Nome do hábito'),
         ),
         backgroundColor:
-            const Color(0xFF79ae92), // Altera a cor de fundo do AlertDialog
+            const Color(0xFF79ae92),
         titleTextStyle:
-            const TextStyle(color: Color(0xFFfbffcd)), // Cor do título
+            const TextStyle(color: Color(0xFFfbffcd)),
         contentTextStyle:
-            const TextStyle(color: Color(0xFFfbffcd)), // Cor do conteúdo
+            const TextStyle(color: Color(0xFFfbffcd)),
         actions: <Widget>[
           TextButton(
             child: const Text('Cancelar',
-                style: TextStyle(color: Color(0xFFfbffcd))), // Cor do texto
+                style: TextStyle(color: Color(0xFFfbffcd))),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF000000), // color1
+              backgroundColor: const Color(0xFF000000),
             ),
             child: const Text(
               'Adicionar',
-              style: TextStyle(color: Color(0xFFfbffcd)), // color5
+              style: TextStyle(color: Color(0xFFfbffcd)),
             ),
             onPressed: () {
               if (habitController.text.isNotEmpty) {
@@ -157,25 +157,25 @@ class _HabitListScreenState extends State<HabitListScreen> {
           decoration: const InputDecoration(hintText: 'Nome do exercício'),
         ),
         backgroundColor:
-            const Color(0xFF79ae92), // Altera a cor de fundo do AlertDialog
+            const Color(0xFF79ae92),
         titleTextStyle:
-            const TextStyle(color: Color(0xFFfbffcd)), // Cor do título
+            const TextStyle(color: Color(0xFFfbffcd)),
         contentTextStyle: const TextStyle(color: Color(0xFFfbffcd)),
         actions: <Widget>[
           TextButton(
             child: const Text('Cancelar',
-                style: TextStyle(color: Color(0xFFfbffcd))), // Cor do texto
+                style: TextStyle(color: Color(0xFFfbffcd))),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF000000), // color1
+              backgroundColor: const Color(0xFF000000),
             ),
             child: const Text(
               'Adicionar',
-              style: TextStyle(color: Color(0xFFfbffcd)), // color5
+              style: TextStyle(color: Color(0xFFfbffcd)),
             ),
             onPressed: () {
               if (exerciseController.text.isNotEmpty) {
@@ -226,15 +226,15 @@ class _HabitListScreenState extends State<HabitListScreen> {
           bool completed = habits[habit]!;
 
           return Card(
-            color: const Color(0xFF79ae92), // color4
+            color: const Color(0xFF79ae92),
             child: Column(
               children: [
                 ListTile(
                   leading: Icon(
                     Icons.check_circle,
                     color: completed
-                        ? const Color(0xFF1dDF24) // Completed icon color
-                        : const Color(0xFFfbffcd), // color5
+                        ? const Color(0xFF1dDF24)
+                        : const Color(0xFFfbffcd),
                   ),
                   title: Text(habit),
                   trailing: habit == 'Beber água'
