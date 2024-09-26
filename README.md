@@ -30,3 +30,7 @@ O aplicativo consiste em ser um controle de hábitos diários para que o usuári
 ![image](https://github.com/user-attachments/assets/9a0c838f-fa6b-4121-8b96-ea94eec6ca9c)
 
 ![image](https://github.com/user-attachments/assets/753838a1-9b47-4969-9015-4a019aaa5791)
+
+# Vídeo demonstrativo
+
+https://github.com/user-attachments/assets/6dd1743b-80ae-40b4-ba7c-d0b480d79f7f
