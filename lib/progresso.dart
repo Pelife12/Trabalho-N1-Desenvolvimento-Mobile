@@ -13,7 +13,7 @@ class ProgressScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Progresso de Hábitos'),
-        backgroundColor: const Color(0xFF001f36), // color2
+        backgroundColor: const Color(0xFF001f36),
       ),
       body: Center(
         child: Container(
@@ -21,8 +21,8 @@ class ProgressScreen extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                const Color(0xFF001f36), // color2
-                const Color(0xFF1c5560), // color3
+                const Color(0xFF001f36),
+                const Color(0xFF1c5560),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -34,7 +34,7 @@ class ProgressScreen extends StatelessWidget {
               const Text(
                 'Hábitos Concluídos:',
                 style:
-                    TextStyle(fontSize: 24, color: Color(0xFFfbffcd)), // color5
+                    TextStyle(fontSize: 24, color: Color(0xFFfbffcd)),
               ),
               const SizedBox(height: 20),
               Text(
@@ -42,15 +42,15 @@ class ProgressScreen extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF79ae92)), // color4
+                    color: Color(0xFF79ae92)),
               ),
               const SizedBox(height: 20),
               LinearProgressIndicator(
                 value: totalHabits == 0 ? 0 : completedCount / totalHabits,
                 minHeight: 10,
-                backgroundColor: const Color(0xFF79ae92), // color4
+                backgroundColor: const Color(0xFF79ae92),
                 valueColor: const AlwaysStoppedAnimation<Color>(
-                    Color(0xFFfbffcd)), // color5
+                    Color(0xFFfbffcd)),
               ),
             ],
           ),
