@@ -1,6 +1,6 @@
 # Trabalho N1 Desenvolvimento Mobile
 
-Projeto desenvolvido para a primeira avaliação da metéria de Desenvolvimento de Dispositivos Móveis do curso de Engenharia de Software.
+Projeto desenvolvido por Felipe Bogo e Jeison Diniz de Souza marinho para a primeira avaliação da metéria de Desenvolvimento de Dispositivos Móveis do curso de Engenharia de Software.
 
 O aplicativo consiste em ser um controle de hábitos diários para que o usuário possa acompanhar durante o dia, semana, mês, etc.
 
